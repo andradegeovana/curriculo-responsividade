@@ -1,0 +1,193 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 50rem;
+    margin: 1.8rem auto;
+    background: #fff;
+    padding: 1.25rem;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+header .profile-pic {
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.3rem solid #fff;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+    top: -4.7rem;
+    left: calc(50% - 4.7rem);
+}
+
+header h1 {
+    margin: 0.6rem 0 0 0;
+    font-size: 2.5em;
+    color: #444;
+    background: linear-gradient(45deg, #ff007b, #007bff, #8000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    margin: 0.3rem 0 0;
+    font-size: 1.2em;
+    color: #777;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 1.25rem 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #444;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.6rem;
+    background: linear-gradient(45deg, #ff007b, #007bff, #8000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.3rem 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.item {
+    margin-bottom: 0.9rem;
+}
+
+.item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.item p {
+    margin: 0.3rem 0;
+    color: #666;
+}
+
+.item span {
+    font-size: 0.9em;
+    color: #999;
+}
+
+/* Responsividade dos textos, imagem, container, header e do nav bar*/
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    header .profile-pic {
+        width: 7rem;
+        height: 7rem;
+        top: -3.5rem;
+        left: calc(50% - 3.5rem);
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .item h3 {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .item h3 {
+        font-size: 1em;
+    }
+}
